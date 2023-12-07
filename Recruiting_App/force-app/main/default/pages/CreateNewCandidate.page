@@ -1,0 +1,13 @@
+<apex:page standardController="Candidate__c" sidebar="false">
+    <apex:form >
+        <apex:pageBlock title="Create New Candidate">
+            <apex:pageBlockSection title="Input Candidate Credintials" columns="1" collapsible="false">
+                <apex:inputField value="{!Candidate__c.First_Name__c}"/>
+                <apex:inputField value="{!Candidate__c.Last_Name__c}"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons location="bottom">
+            	<apex:commandButton action="{!save}" value="Save Candidate"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
